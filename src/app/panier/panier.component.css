@@ -1,0 +1,72 @@
+/* General Container Styling */
+.container {
+    background-color: #000; /* Black background */
+    color: #FFF; /* White text for contrast */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Center all text inside the container */
+  }
+  
+  /* Heading Styling */
+  .container h2, .container h3 {
+    color: #FFA500; /* Orange headings */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center; /* Center headings */
+  }
+  
+  /* Table Styling */
+  .table {
+    color: #FFF; /* White text for table content */
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Add space between rows */
+    margin: 0 auto; /* Center the table within the container */
+    width: 90%; /* Ensure the table is responsive */
+  }
+  
+  .table thead th {
+    background-color: #FFA500; /* Orange background for header */
+    color: #000; /* Black text for header */
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .table tbody tr {
+    background-color: rgba(255, 165, 0, 0.2); /* Light orange for row background */
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center; /* Center all text in rows */
+  }
+  
+  .table tbody tr:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.5);
+  }
+  
+  .table tbody td {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Button Styling */
+  .btn-danger {
+    background-color: #FFA500; /* Orange background */
+    border: none;
+    color: #000; /* Black text */
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn-danger:hover {
+    background-color: #FF4500; /* Darker orange on hover */
+    color: #FFF; /* White text on hover */
+  }
+  
+  /* Align Total Text */
+  h3 {
+    margin-top: 20px;
+    text-align: center; /* Center the total price text */
+  }
+  

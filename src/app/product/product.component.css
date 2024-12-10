@@ -1,0 +1,76 @@
+/* Container styling */
+.container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Title */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff9100;
+}
+
+/* Cards container */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Card styles */
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Card image */
+.card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card content */
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.card-price {
+  font-size: 1.1rem;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+/* Button */
+.btn {
+  padding: 10px 15px;
+  border: none;
+  background-color: #ffae00;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff9100;
+}

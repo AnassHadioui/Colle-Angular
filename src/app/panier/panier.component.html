@@ -1,0 +1,27 @@
+<div class="container mt-4">
+    <h2>The Basket : </h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of cartItems">
+          <td>{{ item.name }}</td>
+          <td>{{ item.price }} MAD</td>
+          <td>{{ item.quantity }}</td>
+          <td>{{ item.price * item.quantity }} MAD</td>
+          <td>
+            <button class="btn btn-danger" (click)="removeFromCart(item.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Total : {{ getTotalPrice() }} MAD</h3>
+  </div>
+ 

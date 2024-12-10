@@ -1,0 +1,122 @@
+/* General Navbar Styling */
+.navbar {
+  background-color: #000; /* Black background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px; /* Adjusted padding for a more spacious appearance */
+}
+
+.navbar-brand {
+  color: #FFA500 !important; /* Orange for the brand */
+  font-size: 1.5rem; /* Slightly larger font for emphasis */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #FFF !important; /* White on hover */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28%255, 165, 0, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 1000px; /* Adjusted space between menu items */
+}
+
+.nav-item {
+  display: inline-block; /* Ensure inline layout for menu items */
+}
+
+.nav-link {
+  color: #FFF !important; /* White text for links */
+  font-weight: bold; /* Bold for better visibility */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-transform: uppercase; /* Make the links uppercase for a bold look */
+}
+
+/* Hover and Active State */
+.nav-link:hover,
+.nav-link.active-link {
+  background-color: #FFA500 !important; /* Orange hover and active background */
+  color: #000 !important; /* Black text on hover */
+}
+
+/* Center Navigation Menu */
+.navbar-collapse {
+  display: flex;
+  justify-content: center; /* Center the links horizontally */
+  gap: 80px; /* Spacing between the links */
+  text-align: center;
+}
+
+/* Optional: Adjust padding for router-outlet if needed */
+router-outlet {
+  display: block;
+  margin-top: 20px;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    flex-direction: column; /* Stack items vertically on small screens */
+    gap: 10px; /* Reduce spacing on small screens */
+  }
+
+
+  .nav-link {
+    width: 100%; /* Full width for better touch usability */
+    text-align: center;
+  }
+}
+/* General Footer Styling */
+.footer {
+  background-color: #000; /* Black background */
+  color: #FFF; /* White text for better visibility */
+}
+
+.footer h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 0.9rem;
+}
+
+.social-icons {
+  font-size: 1.5rem;
+}
+
+.social-icons a {
+  color: #FFF;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #FFA500; /* Orange on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer .row {
+    display: block; /* Stack items vertically */
+  }
+
+  .footer .col-md-3 {
+    margin-bottom: 15px; /* Additional margin for spacing between sections */
+  }
+}
+
